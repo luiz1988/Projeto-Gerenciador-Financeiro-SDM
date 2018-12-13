@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor">#1ba2d8</color>
+    <color name="entrada">#dbd332</color>
+    <color name="escuro">#0a372e</color>
+    <color name="saida">#2abea5</color>
+    <color name="principal">#1ba2d8</color>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DescricaoEntradastextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entradas: "
+            android:textColor="@color/escuro"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/entradasTextView"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/escuro"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DescricaoSaidastextView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/escuro"
+            android:layout_height="wrap_content"
+            android:text="Saídas: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/saidaTextView"
+            android:layout_width="73dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/escuro"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DescricaosaldoTextView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/escuro"
+            android:layout_height="wrap_content"
+            android:text="Saldo total em contas: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/SaldoTextView"
+            android:layout_width="73dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/escuro"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Contas"
+            android:textColor="@color/principal"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

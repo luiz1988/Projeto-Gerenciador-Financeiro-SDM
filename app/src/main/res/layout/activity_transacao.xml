@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HistoricoContaActivity">
+
+    <EditText
+        android:id="@+id/valorTransacaoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/tipoTransacaoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição "
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/centroDeCustoSpinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Tipo da operação:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/debitoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Débito">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/creditoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Crédito">
+        </RadioButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/salvarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/principal"
+            android:onClick="salvar"
+            android:text="Salvar"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</LinearLayout>
